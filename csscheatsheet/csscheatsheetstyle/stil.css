@@ -41,6 +41,22 @@ body{
         background-color: beige;
     }
 
+    .button{
+        margin: auto;
+        background-color: blue;
+        font: 100;
+        font-style: oblique;
+    }
+
+    .button:hover{
+        background-color: red;
+        color: white;
+    }
+
+    .clr{
+        clear: both;
+    }
+
     .catagories{
         border: 1px black solid;
 
@@ -102,7 +118,80 @@ body{
     .my-form input[type="submit"]{
         background-color: aqua;
         color: #fff;
-        padding: 
+        padding: 40px;
+    }
+
+    .block{
+        float: left;
+        width: 33.3%;
+        border: 1px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    #main-block{
+        float: left;
+        width: 70%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #sidebar{
+        float: right;
+        width:30%;
+        background-color: aquamarine;
+        color: black;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .p-box{
+        width: 500px;
+        height: 800px;
+        border: 1px solid black;
+        margin-top: 30px;
+        position: relative;
+        background-image: url('../images/lightimg.jfif');
+        background-repeat: no-repeat;
+        background-position: 500px 200px;
+        background-position: center center;
+    }
+
+    .p-box h1{
+        position: absolute;
+        top: 40px;
+        left: 20px;
+
+    }
+
+    .p-box h2{
+        position: absolute;
+        left: auto;
+
+    }
+
+    .fix-me{
+        position: fixed;
+        top: 400px;
+
+
+    }
+
+    .my-list li:first-child{
+        background: black;
+    }
+
+    .my-list li:last-child{
+        background: black;
+    }
+
+    .my-list li:nth-child(5){
+        background: black;
+    }
+
+    .my-list li:nth-child(even){
+        background: #fff;
     }
 
 }
