@@ -88,9 +88,10 @@ header a:hover{
 
 #showcase{
     min-height:400px;
-    background:url('../images/office.jfif') no-repeat 0 -400px;
+    background:url('../images/office.jfif') no-repeat 0;
     text-align: center;
     color:white;
+    background-size: cover;
 }
 
 #showcase h1{
