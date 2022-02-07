@@ -3,8 +3,8 @@
 body{
     margin:0;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    background: navy;
-    color:green;
+    background: white;
+    color:blue;
     font-size: larger;
     line-height: 1.5;
     text-align: center;
@@ -19,10 +19,10 @@ img{
 }
 
 
-h2{
+h1, h3{
     margin: 0;
     padding: 1em 0;
-    color:whitesmoke;
+    color:blue;
 }
 
 p{
@@ -53,7 +53,8 @@ p{
 #showcase{
     min-height: 450px;
     color: blue;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 #showcase{
@@ -62,7 +63,7 @@ p{
 
 #showcase .backgroundimg{
     position: absolute;
-    background: white url('https://yeditepe.edu.tr/sites/default/files/6_2_5.jpg');
+    background: white url('https://yeditepe.edu.tr/sites/default/files/styles/slideshow/public/1_2.jpg?itok=lY9x_0fw');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -71,7 +72,7 @@ p{
     z-index: -2;
 }
 
-/*supposed to be overlapping log*/
+/*supposed to be overlapping logo*/
 
 #showcase .logoimg{
     position: absolute;
@@ -86,7 +87,7 @@ p{
     top:10px;
 }
 
-#showcase h1{
+#showcase h1, #basvurubilgisi{
     padding-top: 65px;
     padding-bottom: 0;
 }
@@ -96,4 +97,90 @@ p{
 #basvurubilgisi{
     background: navy;
     color: darkgreen;
+}
+
+#internetodeme{
+    padding: 2em 1em 1em;
+}
+
+#internetodeme ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#internetodeme li{
+    margin-bottom: 1em;
+    background: white;
+    color:blue;
+}
+
+.rock-content{
+    padding:0;
+}
+
+/*More specific sub tabs*/
+
+#dahafazla{
+    background:white;
+    color: blue;
+    padding: 2em;
+    border: 20px black;
+}
+
+/*ways to contact us*/
+
+#contactinfo{
+    padding: 2em;
+    color:blue;
+}
+
+#contactinfo .box:first-child{
+    background: blue;
+    color: white;
+}
+
+/*footer*/
+
+#main-footer{
+    padding: 2em;
+    background: black;
+    color:white;
+    text-align: center;
+}
+
+#main-footer a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* part where I make it adjustable */
+
+@media(min-width:700px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .content-wrap, #internetodeme ul{
+        grid-column: 2/4;
+    }
+
+    .box, #main-footer div{
+        grid-column: span 2;
+    }
+
+    #main-footer a{
+        grid-column: center;
+    }
+
+    #internetodeme ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #internetodeme li{
+        width: 50%;
+        height: 50%;
+    }
 }
