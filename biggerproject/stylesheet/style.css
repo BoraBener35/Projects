@@ -156,6 +156,12 @@ p{
 
 /* part where I make it adjustable */
 
+@media(max-width: 700px){
+    .backgroundimg{
+        background-size: cover;
+    }
+}
+
 @media(min-width:700px){
     .grid{
         display: grid;
