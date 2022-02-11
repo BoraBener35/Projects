@@ -74,6 +74,15 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* container default desing*/
+
+.container{
+    background-color: lightblue;
+    color: navy;
+    padding: 20px;
+
+}
+
 /* footer */
 
 .footer{
@@ -102,7 +111,7 @@ nav{
     
 }
 
-.footer-column h3{
+.footer-column h3, h2{
     font-size: medium;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -163,6 +172,98 @@ nav{
     display: flex;
 }
 
+.copy{
+    padding-right: 0;
+    margin-right: 0;
+    text-align: right;
+    margin-top: 35px;
+}
+
+/* Application page */
+
+#application{
+    display: block;
+    block-size: 40%;
+    padding: 30px;
+    font-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 45%;
+}
+
+.btn{
+    display:inline-block;
+    background: navy;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid black;
+    margin: .5em 0;
+}
+
+#application {
+    list-style:none;
+}
+
+
+/* schedule */
+
+#not-determined {
+    display: block;
+    padding: 30px;
+    background-color: lightblue;
+    color: navy;
+    padding-left: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 500px;
+}
+
+#not-determined h4{
+    margin-top: 220px;
+}
+
+/*student center page*/
+
+#studentcenter{
+    background-color: lightblue;
+    height: 250px;
+    padding: 10px;
+}
+
+#studentcenter h4{
+    color: navy;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#studentcenter p{
+    margin-top: 30px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 520;
+}
+
+.studentcenterlinks{
+    display: flex;
+}
+
+/*programs page*/ 
+
+#programs{
+    display: flex;
+    height: 300px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/*obs page*/
+
+#obs{
+    display: flex;
+}
+
 @media(max-width:768px){
 
     body{
@@ -206,14 +307,32 @@ nav{
     }
 
     .footer-column{
-        width: 40%;
         padding: 0 15px;
+        width: 40%;
     }
 
     .footer-news-letter{
-        width: auto;
         padding: 0 15px;
         align-items: center;
+    }
+
+    .copy{
+        flex: none;
+        display: block;
+        margin: 0;
+        width: max-content;
+    }
+
+    #application{
+        padding-left: 30%;
+    }
+
+    #not-determined{
+        padding-left: 10%;
+    }
+
+    #studentcenter{
+        min-height: 450px;
     }
 }
 
