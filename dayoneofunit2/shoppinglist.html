@@ -47,9 +47,11 @@
             const delButton = document.createElement('button');
             delButton.textContent = 'Delete';
 
-            delButton.addEventListener('click', function(){
+            /*delButton.addEventListener('click', function(){
                 delButton.parentElement.remove();
-            });
+            });*/
+
+            delButton.addEventListener('click',() => delButton.parentElement.remove());
             li.appendChild(delButton);
 
             input.value = null;
