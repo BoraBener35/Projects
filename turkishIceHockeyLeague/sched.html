@@ -1,0 +1,129 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Games</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+ 
+     <script
+   src="http://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+   <link rel="style" href="style.css">
+   <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+   <style>
+       .header{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 20px;
+}
+
+.nav-bar{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar li{
+    list-style: none;
+}
+   </style>
+ </head>
+ <header class="header">
+    <nav>
+        <h1>Turkiye Buz Hokey Federasionu</h1>
+
+        <ul class="nav-bar">
+            <li><a href="index.html">Standings</a></li>
+            <li><a href="schedule.html">Game Schedule(add games)</a></li>
+            <li><a href="sched.html">Game Schedule(set schedule)</a></li>
+        </ul>
+    </nav>
+</header>
+ <body>
+    
+ <div class="container">
+     
+     <table class="table table-fluid" id="myTable">
+     <thead>
+     <tr><th>Home team</th><th>Home team goals</th><th>Away Team</th><th>Away team goals</th></tr>
+     </thead>
+     <tbody>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     <tr><td>Buz beykoz</td><td>1</td><td>Buzadam</td><td>1</td></tr>
+     <tr><td>Erzurum BB</td><td>1</td><td>Istanbul BB</td><td>3</td></tr>
+     <tr><td>Yukselis</td><td>1</td><td>Buzadam</td><td>5</td></tr>
+     <tr><td>Izmir BB</td><td>6</td><td>Buz beykoz</td><td>4</td></tr>
+     </tbody>
+     </table>
+ </div>
+ 
+ <script>
+     $(document).ready( function () {
+     $('#myTable').DataTable();
+ } );
+
+
+     </script>
+ </body>
+ </html>

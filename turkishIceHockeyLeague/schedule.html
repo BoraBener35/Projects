@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <h1>Turkiye Buz Hokey Federasionu</h1>
+
+            <ul class="nav-bar">
+                <li><a href="index.html">Standings</a></li>
+                <li><a href="schedule.html">Game Schedule(add games)</a></li>
+                <li><a href="sched.html">Game Schedule(set schedule)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Home Team</label><label class="validation-error hide" id="fullNameValidationError"></label>
+                        <input type="text" name="home" id="home">
+                    </div>
+                    <div>
+                        <label>Home team goals</label>
+                        <input type="text" name="hgoals" id="hgoals">
+                    </div>
+                    <div>
+                        <label>Away Team</label>
+                        <input type="text" name="away" id="away">
+                    </div>
+                    <div>
+                        <label>Away team goals</label>
+                        <input type="text" name="agoals" id="agoals">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="maintable">
+                    <thead>
+                        <tr>
+                            <th col-index = 1>Home team
+                                <select class="table-filter" onchange="filter_rows()"><option value="all"></option></select>
+                            </th>
+                            <th>             </th>
+                            <th>Away team</th>
+                            <th>             </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="pagination">
+        <ul>   <!--pages or li are from JavaScript --> </ul> 
+   </div>
+ 
+   <script src="./main.js"></script>
+ </body>
+    <script src="script.js">
+        window.onload = () => {
+            console.log(document.querySelector("#emp-table > tbody > tr:nth-child(1) > td:nth-child(2) ").innerHTML);
+        };
+
+        getUniqueValuesFromColumn()
+    </script>
+</body>
+
+</html>
