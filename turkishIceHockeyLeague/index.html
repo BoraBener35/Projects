@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Turkish Ice Hockey League</title>
+   <style>
+      table {
+         border-collapse: collapse;
+      }
+
+      td,
+      th {
+         border: 1px solid #999;
+         padding: 0.5rem;
+         text-align: left;
+      }
+   </style>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+    <header class="header">
+        <nav>
+            <h1>Turkiye Buz Hokey Federasionu</h1>
+
+            <ul class="nav-bar">
+               <li><a href="index.html">Standings</a></li>
+               <li><a href="schedule.html">Game Schedule(add games)</a></li>
+               <li><a href="sched.html">Game Schedule(set schedule)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   <button id="clickme">Click To View</button>
+   <input type="text" name="search" id="search">
+   <div id="table">
+      <table id="datatable">
+         <thead>
+            <tr>
+               <th id="name">Team Name</th>
+               <th id="number">#</th>
+               <th id="gP">GP</th>
+               <th id="wins">W</th>
+               <th id="loses">L</th>
+               <th id="ties"><span>T</span></th>
+               <th id="plusminus">+ -</th>
+               <th id="gA">GA</th>
+               <th id="goalsFor">GF</th>
+               <th id="gAt">GAT</th>
+               <th id="gFT">GFT</th>
+               <th id="points">P</th>
+               <th id="ppgavg">PPG AVG</th>
+            </tr>
+         </thead>
+         <tbody></tbody>
+      </table>
+   </div>
+
+   
+
+   <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+/*Core styles*/
+
+body{
+    margin:0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background: white;
+    color:blue;
+    font-size: larger;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+    display:block;
+    width: 100%;
+    height:auto;
+
+}
+
+
+h1, h3{
+    margin: 0;
+    padding: 1em 0;
+    color:blue;
+}
+
+p{
+    margin: 0;
+    padding: 1em 0;
+    font-size: small;
+}
+
+.btn{
+    display:inline-block;
+    background: blue;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid black;
+    margin: .5em 0;
+}
+
+.btn:hover{
+    background:transparent;
+    color:blue;
+    border:1px solid blue;
+    font-weight: bold;
+}
+
+/*header*/
+
+#showcase{
+    min-height: 450px;
+    color: blue;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#showcase{
+    position: relative;
+}
+
+#showcase .backgroundimg{
+    position: absolute;
+    background: white url('https://yeditepe.edu.tr/sites/default/files/styles/slideshow/public/1_2.jpg?itok=lY9x_0fw');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 450px;
+    z-index: -2;
+}
+
+/*supposed to be overlapping logo*/
+
+#showcase .logoimg{
+    position: absolute;
+    background: white url('https://med.yeditepe.edu.tr/sites/default/files/yeditepe-logo-eng_sayfa_1.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width:auto;
+    height: auto;
+    z-index: 1;
+    position:absolute;
+    top:10px;
+}
+
+#showcase h1, #basvurubilgisi{
+    padding-top: 65px;
+    padding-bottom: 0;
+}
+
+/*About the application*/
+
+#basvurubilgisi{
+    background: navy;
+    color: darkgreen;
+}
+
+#internetodeme{
+    padding: 2em 1em 1em;
+}
+
+#internetodeme ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#internetodeme li{
+    margin-bottom: 1em;
+    background: white;
+    color:blue;
+}
+
+.rock-content{
+    padding:0;
+}
+
+/*More specific sub tabs*/
+
+#dahafazla{
+    background:white;
+    color: blue;
+    padding: 2em;
+    border: 20px black;
+}
+
+/*ways to contact us*/
+
+#contactinfo{
+    padding: 2em;
+    color:blue;
+}
+
+#contactinfo .box:first-child{
+    background: blue;
+    color: white;
+}
+
+/*footer*/
+
+#main-footer{
+    padding: 2em;
+    background: black;
+    color:white;
+    text-align: center;
+}
+
+#main-footer a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+/* part where I make it adjustable */
+
+@media(max-width: 700px){
+    .backgroundimg{
+        background-size: cover;
+    }
+}
+
+@media(min-width:700px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .content-wrap, #internetodeme ul{
+        grid-column: 2/4;
+    }
+
+    .box, #main-footer div{
+        grid-column: span 2;
+    }
+
+    #main-footer a{
+        grid-column: center;
+    }
+
+    #internetodeme ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #internetodeme li{
+        width: 50%;
+        height: 50%;
+    }
+
+    /* Menu button*/
+
+    .menu-btn{
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        border:3px solid transparent;
+    }
+
+    .menu-btn__burger{
+        width: 50px;
+        height: 6px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(255, 101, 47, .2);
+        transition: all .5 ease-in-out;
+    }
+
+    .menu-btn__burger::before, .menu-btn__burger::after{
+        content:'';
+        position: absolute;
+        width: 50px;
+        height:6px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgb(255, 101, 47, .2);
+        transition: all .5 ease-in-out;
+    }
+
+    .menu-btn__burger::before{
+        transform: translateY(-16px);
+    }
+
+    .menu-btn__burger::after{
+        transform: translateY(16px);
+    }
+
+    /*animation for button*/
+
+    .menu-btn.open .menu-btn__burger {
+        transform:translateX(-50px);
+        background:transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+}
