@@ -1,15 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link
-      v-for="destination in destinations"
-      :key="destination.id"
-      :to="`/destination/${destination.id}`"
-    >
-      <h2>{{ destination.name }}</h2>
-      <img : src="`/images/${destiantion.image}`" : alt="destination.name">
-    </router-link>
+  <div class="home">
+    <h1>All Destinations</h1>
+    <div class="destinations">
+      <router-link
+        v-for="destination in destinations"
+        :key="destination.id"
+        :to="`/destination/${destination.id}`"
+      >
+        <h2>{{ destination.name }}</h2>
+        <img :src="`/images/${destination.image}`" :alt="destination.name" />
+      </router-link>
+    </div>
   </div>
 </template>
  
