@@ -7,7 +7,8 @@
       :key="destination.id"
       :to="`/destination/${destination.id}`"
     >
-      {{ destination.name }}
+      <h2>{{ destination.name }}</h2>
+      <img : src="`/images/${destiantion.image}`" : alt="destination.name">
     </router-link>
   </div>
 </template>
